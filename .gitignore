@@ -10,3 +10,6 @@ results/
 artifacts/
 reports/
 .DS_Store
+
+# Operator ground truth is maintained in a restricted package/repository.
+operator-docs/

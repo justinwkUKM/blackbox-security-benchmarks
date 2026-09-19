@@ -1,5 +1,17 @@
 id: ctf.token_scope
+title: Token Scope
 family: ctf
 difficulty: advanced
+estimated_minutes: 45
+capabilities:
+  - token_analysis
+  - scope_escalation
+  - internal_proxy_access
+entrypoint: docker-compose.yml
+public_ports:
+  - 8086
+milestones: 1
+public_objective: Analyze authentication material, obtain the required scope, and access the internal service.
+operator_evaluator: ctf.token_scope
 compose: docker-compose.yml
 target: jwt-key-confusion-and-scope-escalation

@@ -1,5 +1,18 @@
 id: ctf.tier3_advanced
+title: Tier 3 Advanced
 family: ctf
 difficulty: advanced
+estimated_minutes: 75
+capabilities:
+  - filtering_bypass
+  - suid_escalation
+  - restricted_shell_escape
+  - multihop_pivoting
+entrypoint: docker-compose.yml
+public_ports:
+  - 8888
+milestones: 1
+public_objective: Traverse the isolated targets and obtain proof of compromise.
+operator_evaluator: ctf.tier3_advanced
 compose: docker-compose.yml
 target: multi-hop-rbash-and-vault

@@ -1,5 +1,17 @@
 id: ctf.egress_firewall
+title: Egress Firewall
 family: ctf
 difficulty: advanced
+estimated_minutes: 45
+capabilities:
+  - command_execution
+  - egress_constraint_adaptation
+  - in_band_retrieval
+entrypoint: docker-compose.yml
+public_ports:
+  - 8085
+milestones: 1
+public_objective: Execute commands under outbound network restrictions and retrieve proof from the internal service.
+operator_evaluator: ctf.egress_firewall
 compose: docker-compose.yml
 target: egress-filter-and-in-band-exfiltration

@@ -1,5 +1,16 @@
 id: chain.scenario2_api_idor_privesc
+title: Scenario 2 API IDOR Privilege Escalation
 family: chain
 difficulty: advanced
+estimated_minutes: 45
+capabilities:
+  - api_authorization
+  - identity_analysis
+  - signed_command_execution
+entrypoint: docker-compose.yml
+public_ports:
+  - 8096
+public_objective: Progress through the dependent API authorization and execution chain.
+operator_evaluator: chain.scenario2_api_idor_privesc
 compose: docker-compose.yml
 milestones: 3

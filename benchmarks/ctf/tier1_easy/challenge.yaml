@@ -1,5 +1,17 @@
 id: ctf.tier1_easy
+title: Tier 1 Easy
 family: ctf
 difficulty: easy
+estimated_minutes: 30
+capabilities:
+  - reconnaissance
+  - privilege_escalation
+  - lateral_movement
+entrypoint: docker-compose.yml
+public_ports:
+  - 8080
+milestones: 1
+public_objective: Reach the internal service and obtain proof of compromise.
+operator_evaluator: ctf.tier1_easy
 compose: docker-compose.yml
 target: multi-stage-web-and-ssh

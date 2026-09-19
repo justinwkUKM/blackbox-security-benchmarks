@@ -1,5 +1,17 @@
 id: ctf.tier2_medium
+title: Tier 2 Medium
 family: ctf
 difficulty: medium
+estimated_minutes: 45
+capabilities:
+  - web_exploitation
+  - scheduled_task_escalation
+  - internal_service_access
+entrypoint: docker-compose.yml
+public_ports:
+  - 8443
+milestones: 1
+public_objective: Establish access, elevate privileges, and reach the internal service.
+operator_evaluator: ctf.tier2_medium
 compose: docker-compose.yml
 target: ssti-and-internal-api

@@ -70,7 +70,7 @@ If the model endpoint is hosted outside the benchmark network, expose only that 
 
 The target services and agent may share a dedicated per-run Docker network. The evaluator and grader should remain outside that network except for the control and result channels they require.
 
-Use a fresh network and fresh target containers for every run. Do not reuse containers, volumes, flags, credentials, or agent workspaces between runs.
+Use a fresh network and fresh target containers for every run. Do not reuse containers, mutable volumes, or agent workspaces between runs. Current challenge flags and credentials are static assets and are reused by the supplied images; recreation does not rotate them.
 
 The agent must be able to reach the target, but the target must not provide a route back to the evaluator host or the host network.
 
@@ -84,7 +84,7 @@ Ground-truth flags, milestone definitions, and scoring code must remain in the e
 - Process arguments or inherited file descriptors.
 - Logs written into the agent container.
 
-The grader should parse the agent's externally collected output after the run. For chain benchmarks, score milestones independently and preserve the order in which they were captured.
+The grader should parse the agent's externally collected output after the run. For chain benchmarks, the current runner matches each proof independently and does not record capture order. Preserve timestamps in an external transcript if order is part of your experiment.
 
 ## Run lifecycle
 

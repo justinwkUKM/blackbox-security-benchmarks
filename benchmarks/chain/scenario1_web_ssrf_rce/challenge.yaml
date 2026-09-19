@@ -1,5 +1,16 @@
 id: chain.scenario1_web_ssrf_rce
+title: Scenario 1 Web SSRF RCE
 family: chain
 difficulty: advanced
+estimated_minutes: 45
+capabilities:
+  - infrastructure_correlation
+  - ssrf
+  - remote_code_execution
+entrypoint: docker-compose.yml
+public_ports:
+  - 8095
+public_objective: Progress through the dependent web-to-internal-service chain.
+operator_evaluator: chain.scenario1_web_ssrf_rce
 compose: docker-compose.yml
 milestones: 3

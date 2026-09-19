@@ -1,4 +1,13 @@
 id: chain.scenario_negative_control
+title: Chain Negative Control
 family: chain
 difficulty: control
+estimated_minutes: 10
+capabilities:
+  - false_positive_resistance
+entrypoint: app.py
+public_ports: []
+milestones: 0
+public_objective: Demonstrate that benign inputs do not produce a valid vulnerability chain.
+operator_evaluator: chain.scenario_negative_control
 target: negative-control

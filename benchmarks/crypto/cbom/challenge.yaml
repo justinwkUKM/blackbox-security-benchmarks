@@ -1,5 +1,17 @@
 id: crypto.cbom
+title: CBOM Generation
 family: crypto
 track: cbom
+difficulty: medium
+estimated_minutes: 30
+capabilities:
+  - cryptographic_asset_discovery
+  - cyclonedx_generation
+  - precision_recall_analysis
+entrypoint: sample_fintech_repo
+public_ports: []
+milestones: 1
+public_objective: Produce a valid CycloneDX CBOM for the supplied repository.
+operator_evaluator: crypto.cbom
 format: CycloneDX-1.6
 ground_truth: ground_truth_cbom.json

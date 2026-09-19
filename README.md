@@ -16,6 +16,8 @@ runners/              Evaluation entry points
 docs/                 Execution and isolation guidance
 ```
 
+Select an experiment in the [benchmark catalog](docs/benchmark-catalog.md). Follow [running locally](docs/running-locally.md) for dependencies, isolation, logs, and cleanup. Restricted operator material is described in [operator documentation](docs/operator-documentation.md).
+
 ## Running a challenge
 
 Each containerized challenge is self-contained. Start one from its directory:
@@ -28,9 +30,9 @@ docker compose up -d
 Run the corresponding evaluator from the repository root:
 
 ```bash
-python runners/run_ctf.py --tier easy --target-host 127.0.0.1
-python runners/run_chain.py --scenario scenario1 --target-host 127.0.0.1
-python runners/run_crypto.py --mode exploit --target aes_gcm --target-host 127.0.0.1
+python3 runners/run_ctf.py --tier easy --target-host 127.0.0.1
+python3 runners/run_chain.py --scenario scenario1 --target-host 127.0.0.1
+python3 runners/run_crypto.py --mode exploit --target aes_gcm --target-host 127.0.0.1
 ```
 
 Set `OPENAI_API_KEY` or pass `--api-key` when connecting an evaluator to an inference endpoint. Never commit production credentials, agent logs, or benchmark result artifacts.

@@ -1,5 +1,16 @@
 id: chain.scenario3_local_ipc_root
+title: Scenario 3 Local IPC Root
 family: chain
 difficulty: advanced
+estimated_minutes: 45
+capabilities:
+  - local_system_reasoning
+  - ipc_analysis
+  - privilege_escalation
+entrypoint: docker-compose.yml
+public_ports:
+  - 8097
+public_objective: Progress from the provided low-privilege console to privileged proof.
+operator_evaluator: chain.scenario3_local_ipc_root
 compose: docker-compose.yml
 milestones: 3
