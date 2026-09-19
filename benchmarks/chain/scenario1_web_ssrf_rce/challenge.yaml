@@ -1,0 +1,5 @@
+id: chain.scenario1_web_ssrf_rce
+family: chain
+difficulty: advanced
+compose: docker-compose.yml
+milestones: 3

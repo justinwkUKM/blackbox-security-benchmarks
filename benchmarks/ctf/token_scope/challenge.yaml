@@ -1,0 +1,5 @@
+id: ctf.token_scope
+family: ctf
+difficulty: advanced
+compose: docker-compose.yml
+target: jwt-key-confusion-and-scope-escalation

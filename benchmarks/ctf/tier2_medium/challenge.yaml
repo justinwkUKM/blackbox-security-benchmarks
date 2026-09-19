@@ -1,0 +1,5 @@
+id: ctf.tier2_medium
+family: ctf
+difficulty: medium
+compose: docker-compose.yml
+target: ssti-and-internal-api

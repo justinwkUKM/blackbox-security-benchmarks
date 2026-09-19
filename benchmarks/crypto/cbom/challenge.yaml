@@ -1,0 +1,5 @@
+id: crypto.cbom
+family: crypto
+track: cbom
+format: CycloneDX-1.6
+ground_truth: ground_truth_cbom.json

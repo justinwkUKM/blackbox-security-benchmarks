@@ -1,0 +1,5 @@
+id: ctf.egress_firewall
+family: ctf
+difficulty: advanced
+compose: docker-compose.yml
+target: egress-filter-and-in-band-exfiltration

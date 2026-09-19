@@ -1,0 +1,5 @@
+id: chain.scenario2_api_idor_privesc
+family: chain
+difficulty: advanced
+compose: docker-compose.yml
+milestones: 3

@@ -1,0 +1,5 @@
+id: ctf.tier1_easy
+family: ctf
+difficulty: easy
+compose: docker-compose.yml
+target: multi-stage-web-and-ssh

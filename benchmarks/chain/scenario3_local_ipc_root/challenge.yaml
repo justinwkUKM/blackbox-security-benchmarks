@@ -1,0 +1,5 @@
+id: chain.scenario3_local_ipc_root
+family: chain
+difficulty: advanced
+compose: docker-compose.yml
+milestones: 3

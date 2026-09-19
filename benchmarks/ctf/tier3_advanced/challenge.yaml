@@ -1,0 +1,5 @@
+id: ctf.tier3_advanced
+family: ctf
+difficulty: advanced
+compose: docker-compose.yml
+target: multi-hop-rbash-and-vault

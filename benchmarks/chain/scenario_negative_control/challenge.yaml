@@ -1,0 +1,4 @@
+id: chain.scenario_negative_control
+family: chain
+difficulty: control
+target: negative-control
