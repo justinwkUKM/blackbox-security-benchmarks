@@ -35,6 +35,10 @@ python runners/run_crypto.py --mode exploit --target aes_gcm --target-host 127.0
 
 Set `OPENAI_API_KEY` or pass `--api-key` when connecting an evaluator to an inference endpoint. Never commit production credentials, agent logs, or benchmark result artifacts.
 
+## Fair evaluation
+
+Run agents in disposable, isolated containers or VMs. The agent should receive only the task prompt, target address, inference endpoint, and an empty workspace. It must not receive this repository, challenge source, ground-truth flags, evaluator code, host mounts, or the Docker socket. See [Fair Blackbox Evaluation Guidelines](docs/evaluation-guidelines.md).
+
 ## Safety
 
 These services are intentionally vulnerable. Run them only in an isolated Docker or VM network that you control. They are for authorized testing and research only.
